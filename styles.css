@@ -23,8 +23,7 @@ body {
 .container {
   width: 90%;
   margin: auto;
-  border-left: 5px solid #e3e3e3;
-  border-right: 5px solid #e3e3e3;
+  border: 5px solid #e3e3e3;
   border-radius: 20px;
   overflow: hidden;
   height: 75px;
@@ -173,7 +172,7 @@ body {
     }
     49.98%,
     62.64% {
-      transform: translate3d(0, -94%, 0);
+      transform: translate3d(0, -92%, 0);
     }
     66.64%,
     79.3% {
@@ -190,5 +189,12 @@ body {
 @media all and (min-width: 1200px) {
   .container {
     width: 60%;
+  }
+}
+
+/* Extra Extra Large Screens */
+@media all and (min-width: 1500px) {
+  .container {
+    width: 50%;
   }
 }
