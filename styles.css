@@ -38,7 +38,7 @@ body {
   -webkit-animation-iteration-count: infinite;
   animation-name: change;
   animation-iteration-count: infinite;
-  animation-duration: 4s;
+  animation-duration: 10s;
 }
 
 @keyframes change {
