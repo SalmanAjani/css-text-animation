@@ -38,10 +38,10 @@ body {
   -webkit-animation-iteration-count: infinite;
   animation-name: change;
   animation-iteration-count: infinite;
-  animation-duration: 10s;
+  animation-duration: 4s;
 }
 
-@-webkit-keyframes change {
+@keyframes change {
   0%,
   12.66%,
   100% {
@@ -69,17 +69,56 @@ body {
   }
 }
 
-/* Medium Screens */
-@media all and (min-width: 768px) and (max-width: 1024px) {
+/* Small Screens */
+@media all and (min-width: 480px) {
   .container {
-    width: 67%;
+    width: 92%;
+  }
+
+  .text {
+    font-size: 25px;
+  }
+  
+  @keyframes change {
+    0%,
+    12.66%,
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+    12.66%,
+    29.32% {
+      transform: translate3d(0, -30%, 0);
+    }
+    33.32%,
+    45.98% {
+      transform: translate3d(0, -58%, 0);
+    }
+    49.98%,
+    62.64% {
+      transform: translate3d(0, -87%, 0);
+    }
+    66.64%,
+    79.3% {
+      transform: translate3d(0, -58%, 0);
+    }
+    83.3%,
+    95.96% {
+      transform: translate3d(0, -30%, 0);
+    }
+  }
+}
+
+/* Medium Screens */
+@media all and (min-width: 768px) {
+  .container {
+    width: 72%;
   }
 
   .text {
     font-size: 30px;
   }
 
-  @-webkit-keyframes change {
+  @keyframes change {
     0%,
     12.66%,
     100% {
@@ -91,15 +130,15 @@ body {
     }
     33.32%,
     45.98% {
-      transform: translate3d(0, -60%, 0);
+      transform: translate3d(0, -61%, 0);
     }
     49.98%,
     62.64% {
-      transform: translate3d(0, -87%, 0);
+      transform: translate3d(0, -90%, 0);
     }
     66.64%,
     79.3% {
-      transform: translate3d(0, -60%, 0);
+      transform: translate3d(0, -61%, 0);
     }
     83.3%,
     95.96% {
@@ -111,14 +150,14 @@ body {
 /* Large Screens */
 @media all and (min-width: 992px) {
   .container {
-    width: 68%;
+    width: 75%;
   }
 
   .text {
     font-size: 40px;
   }
 
-  @-webkit-keyframes change {
+  @keyframes change {
     0%,
     12.66%,
     100% {
@@ -134,7 +173,7 @@ body {
     }
     49.98%,
     62.64% {
-      transform: translate3d(0, -93%, 0);
+      transform: translate3d(0, -94%, 0);
     }
     66.64%,
     79.3% {
@@ -150,6 +189,6 @@ body {
 /* Extra Large Screens */
 @media all and (min-width: 1200px) {
   .container {
-    width: 35%;
+    width: 60%;
   }
 }
